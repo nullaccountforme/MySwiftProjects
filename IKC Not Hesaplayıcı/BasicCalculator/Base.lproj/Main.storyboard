@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BasicCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vize Notu..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-pB-dka">
+                                <rect key="frame" x="93" y="328" width="240" height="34"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="92o-5X-SO4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Final Notu..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ei7-Dy-J2v">
+                                <rect key="frame" x="93" y="392" width="240" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FsW-DA-wBM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SONUÇ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EX-Wk-WRD">
+                                <rect key="frame" x="93" y="463" width="240" height="34"/>
+                                <color key="backgroundColor" red="0.67433214190000001" green="0.09387918562" blue="0.1757957339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="POJ-TV-ExA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="İzmir_Kâtip_Çelebi_Üniversitesi_logosu" translatesAutoresizingMaskIntoConstraints="NO" id="InJ-re-S5i">
+                                <rect key="frame" x="93" y="142" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HARF NOTUNUZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ak-xh-y3b">
+                                <rect key="frame" x="93" y="523" width="240" height="34"/>
+                                <color key="backgroundColor" red="0.67433214190000001" green="0.09387918562" blue="0.1757957339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="rBF-rb-uKS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyb-nj-3lO">
+                                <rect key="frame" x="163" y="606" width="101" height="34"/>
+                                <color key="backgroundColor" red="0.67433214190000001" green="0.09387918562" blue="0.1757957339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="dVp-2r-va2"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hesapla">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="hesaplaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGg-G4-tbk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="5Ak-xh-y3b" firstAttribute="top" secondItem="2EX-Wk-WRD" secondAttribute="bottom" constant="26" id="3lf-mI-8UJ"/>
+                            <constraint firstItem="InJ-re-S5i" firstAttribute="leading" secondItem="C9i-pB-dka" secondAttribute="leading" id="3rb-pn-9xH"/>
+                            <constraint firstItem="fyb-nj-3lO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="163" id="C8Y-GR-0mL"/>
+                            <constraint firstItem="5Ak-xh-y3b" firstAttribute="centerX" secondItem="fyb-nj-3lO" secondAttribute="centerX" id="CvU-HV-yBO"/>
+                            <constraint firstItem="2EX-Wk-WRD" firstAttribute="trailing" secondItem="5Ak-xh-y3b" secondAttribute="trailing" id="Emk-Nh-OaR"/>
+                            <constraint firstItem="C9i-pB-dka" firstAttribute="trailing" secondItem="Ei7-Dy-J2v" secondAttribute="trailing" id="HJk-Mb-znL"/>
+                            <constraint firstItem="2EX-Wk-WRD" firstAttribute="leading" secondItem="5Ak-xh-y3b" secondAttribute="leading" id="HRf-Iq-ZSf"/>
+                            <constraint firstItem="Ei7-Dy-J2v" firstAttribute="leading" secondItem="2EX-Wk-WRD" secondAttribute="leading" id="J19-cb-J2z"/>
+                            <constraint firstItem="Ei7-Dy-J2v" firstAttribute="trailing" secondItem="2EX-Wk-WRD" secondAttribute="trailing" id="JsC-n1-n5k"/>
+                            <constraint firstItem="InJ-re-S5i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="Pxu-6e-oI4"/>
+                            <constraint firstItem="Ei7-Dy-J2v" firstAttribute="top" secondItem="C9i-pB-dka" secondAttribute="bottom" constant="30" id="VIQ-WZ-uAF"/>
+                            <constraint firstItem="InJ-re-S5i" firstAttribute="trailing" secondItem="C9i-pB-dka" secondAttribute="trailing" id="h4d-lt-zp6"/>
+                            <constraint firstItem="C9i-pB-dka" firstAttribute="top" secondItem="InJ-re-S5i" secondAttribute="bottom" constant="58" id="kRg-ac-cRc"/>
+                            <constraint firstItem="C9i-pB-dka" firstAttribute="leading" secondItem="Ei7-Dy-J2v" secondAttribute="leading" id="oDc-4k-TnS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fyb-nj-3lO" secondAttribute="bottom" constant="222" id="pjV-Va-9Tq"/>
+                            <constraint firstItem="fyb-nj-3lO" firstAttribute="top" secondItem="5Ak-xh-y3b" secondAttribute="bottom" constant="49" id="puc-Be-sOM"/>
+                            <constraint firstItem="2EX-Wk-WRD" firstAttribute="top" secondItem="Ei7-Dy-J2v" secondAttribute="bottom" constant="37" id="sBR-bj-Bsy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="InJ-re-S5i" secondAttribute="trailing" constant="81" id="swz-vD-2aZ"/>
+                            <constraint firstItem="InJ-re-S5i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="u6X-3J-iGP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstText" destination="C9i-pB-dka" id="lEZ-XL-6Rv"/>
+                        <outlet property="harfnotuLabel" destination="5Ak-xh-y3b" id="UVc-Ah-KfG"/>
+                        <outlet property="resultLabel" destination="2EX-Wk-WRD" id="SCs-aE-MUs"/>
+                        <outlet property="secondText" destination="Ei7-Dy-J2v" id="w92-dZ-Ipq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="İzmir_Kâtip_Çelebi_Üniversitesi_logosu" width="3146" height="1488"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
